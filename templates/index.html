@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Pods as Birds</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="birds-container"></div>
+    <div id="no-pods-message" class="message">
+        <span class="sad-emoji">&#128577;</span> No pods are running in the development namespace.
+    </div>
+    <div class="popup" id="popup">
+        <span class="sad-emoji">&#128577;</span> <span id="popupText"></span>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
